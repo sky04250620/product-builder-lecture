@@ -104,6 +104,8 @@ p {
     transition: background-color 0.3s ease;
 }
 
-#recommend-button:hover {
-    background-color: #e65a50;
+.comment-container {
+    max-width: 600px;
+    width: 90%;
+    margin-bottom: 50px;
 }
