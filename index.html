@@ -1,14 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Menu Recommendation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="container">
+        <h1>Feeling hungry?</h1>
+        <p>Get a random lunch menu recommendation!</p>
+        <div id="menu-display"></div>
+        <button id="recommend-button">Get Recommendation</button>
+    </div>
+
+    <div class="container inquiry-container">
+        <h2>제휴 문의</h2>
+        <p>함께하고 싶으신가요? 메시지를 남겨주세요.</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST" id="inquiry-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="성함/업체명" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="이메일 주소" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="문의 내용" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">문의하기</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
